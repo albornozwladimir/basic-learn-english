@@ -1,0 +1,32 @@
+[
+  {
+    "question": "She drinks beer?",
+    "answers": {
+      "1": "She drink beer?",
+      "2": "drinks she beer?",
+      "3": "It's correct"
+    },
+    "correctAnswer": "3",
+    "explanation": "Third person adds a letter 's' to the verb"
+  },
+  {
+    "question": "One plus two equals three",
+    "answers": {
+      "1": "It's correct",
+      "2": "is four",
+      "3": "is two"
+    },
+    "correctAnswer": "1",
+    "explanation": "1 + 2 = 3"
+  },
+  {
+    "question": "I hate poetry",
+    "answers": {
+      "1": "It's correct",
+      "2": "I hates poetry",
+      "3": "I hate poetrys"
+    },
+    "correctAnswer": "1",
+    "explanation": "The phrase is correct"
+  }
+]

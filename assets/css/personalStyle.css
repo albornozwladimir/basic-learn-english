@@ -1,0 +1,25 @@
+/* Importaciones */
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/* #############################
+Principal Background
+################################ */
+* {
+  margin: 0;
+  padding: 0; }
+
+.question {
+  margin-top: 1rem;
+  color: DodgerBlue;
+  font-style: "Lato", sans-serif; }
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  font-style: "Hina Mincho", serif; }
+
+.explanations {
+  font-style: "Lato", sans-serif; }
+
+#submitReading {
+  margin-top: 1rem; }

@@ -1,0 +1,30 @@
+/* Importaciones */
+@import "fonts";
+
+/* #############################
+Principal Background
+################################ */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.question{
+	margin-top: 1rem;
+	color: DodgerBlue;
+	font-style: $latoSanSerif;
+}
+
+.answers{
+	display: flex;
+	flex-direction: column;
+	font-style: $minaNacho;
+}
+
+.explanations{
+	font-style: $latoSanSerif;
+}
+
+#submitReading{
+	margin-top: 1rem;
+}

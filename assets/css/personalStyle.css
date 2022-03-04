@@ -13,7 +13,8 @@ body {
   height: 100%; }
 
 .page-section {
-  padding: 8rem 0; }
+  padding: 8rem 0;
+  background-image: linear-gradient(174.2deg, #fff4e4 7.1%, #f0f6ee 67.4%); }
 
 header.masthead {
   padding-top: 10rem;

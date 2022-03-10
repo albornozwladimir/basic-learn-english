@@ -77,17 +77,6 @@ header.masthead h1, header.masthead .h1 {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px; } }
 
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: 50% 50%; }
-
-canvas {
-  display: block;
-  vertical-align: bottom; }
-
 .question {
   margin-top: 1rem;
   color: DodgerBlue;
@@ -96,13 +85,21 @@ canvas {
 .answers {
   display: flex;
   flex-direction: column;
+  color: #041322;
   font-style: "Hina Mincho", serif; }
 
 .explanations {
   font-style: "Lato", sans-serif; }
 
-#submitReading {
-  margin-top: 1rem; }
+/* #############################
+Footer
+################################ */
+.footer, .footer p {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start; }
 
-#servicesTitle {
-  color: #4682B4; }
+.footer p {
+  color: #424949;
+  text-decoration: none;
+  margin: 1rem; }

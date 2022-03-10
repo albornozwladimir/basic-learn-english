@@ -14,7 +14,11 @@ body {
 
 .page-section {
   padding: 8rem 0;
-  background-image: linear-gradient(174.2deg, #fff4e4 7.1%, #f0f6ee 67.4%); }
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); }
+
+.page-quiz {
+  padding: 8rem 0;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
 
 header.masthead {
   padding-top: 10rem;
@@ -90,6 +94,9 @@ header.masthead h1, header.masthead .h1 {
 
 .explanations {
   font-style: "Lato", sans-serif; }
+
+#submitQuiz {
+  margin-top: 1rem; }
 
 /* #############################
 Footer

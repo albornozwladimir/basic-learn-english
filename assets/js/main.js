@@ -35,7 +35,8 @@ $('#initReading').on('click', function () {
   const sectionReady = new Section("reading")
   loadHistory.innerHTML = 
   `
-  My family lives in a small house. It’s simple but pretty. It has a large garden. I like to work in the garden but my sister hates to work in the garden. She prefers to read. She reads in the morning, in the afternoon and at night.
+  My family lives in a small house. It’s simple but pretty. It has a large garden. I like to work in the garden but my sister hates to work in the garden. 
+  She prefers to read. She reads in the morning, in the afternoon and at night.
   <br/>I give all of the vegetables to mom and dad. They like to cook in our small kitchen. I eat any vegetable but my sister eats only a few.
   <br/>My family always eats breakfast and dinner together. We talk. We laugh. Then my sister washes the dishes.
   <br/>At night dad likes to listen to music. Mom works on the computer. I watch television. And my sister reads.
@@ -49,6 +50,7 @@ $('#initWriting').on('click', function () {
   times("init")
   const dataJson = "../data/writing.json"
   const sectionReady = new Section("writing")
+  loadHistory.innerHTML = ""
   principalMethod(dataJson, sectionReady)
 })
 

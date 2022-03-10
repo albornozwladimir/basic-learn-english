@@ -1,32 +1,57 @@
 [
   {
-    "question": "She drinks beer?",
+    "question": "Which is another way to describe the family’s house?",
     "answers": {
-      "1": "She drink beer?",
-      "2": "drinks she beer?",
-      "3": "It's correct"
+      "1": "cramped but cozy",
+      "2": "narrow but suitable",
+      "3": "little but attractive",
+      "4": "old but cheery"
     },
     "correctAnswer": "3",
-    "explanation": "Third person adds a letter 's' to the verb"
+    "explanation": "Petty house"
   },
   {
-    "question": "One plus two equals three",
+    "question": "The family has how many members?",
     "answers": {
-      "1": "It's correct",
-      "2": "is four",
-      "3": "is two"
+      "1": "two",
+      "2": "four",
+      "3": "three",
+      "4": "five"
     },
-    "correctAnswer": "1",
-    "explanation": "1 + 2 = 3"
+    "correctAnswer": "2",
+    "explanation": "4 members"
   },
   {
-    "question": "I hate poetry",
+    "question": "Who doesn’t enjoy working in the garden?",
     "answers": {
-      "1": "It's correct",
-      "2": "I hates poetry",
-      "3": "I hate poetrys"
+      "1": "grandmother",
+      "2": "cousin",
+      "3": "father",
+      "4": "sister"
+    },
+    "correctAnswer": "4",
+    "explanation": "The sister"
+  },
+  {
+    "question": "When does the sister like to read?",
+    "answers": {
+      "1": "all of the above",
+      "2": "at night",
+      "3": "in the afternoon",
+      "4": "in the morning"
     },
     "correctAnswer": "1",
-    "explanation": "The phrase is correct"
+    "explanation": "similar on"
+  },
+  {
+    "question": "When do the family members not eat together?",
+    "answers": {
+      "1": "at dinner",
+      "2": "at lunch",
+      "3": "at breakfast",
+      "4": "all of the above"
+    },
+    "correctAnswer": "2",
+    "explanation": "ñam ñam..."
   }
 ]

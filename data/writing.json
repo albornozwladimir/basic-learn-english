@@ -1,0 +1,67 @@
+[
+  {
+    "question": "Brian went camping as a young boy and greatly enjoyed the outdoors as a teenager. _______, he works as an adventure guide in the outback in Australia.",
+    "answers": {
+      "1": "As a result",
+      "2": "Incidentally",
+      "3": "Even though"
+    },
+    "correctAnswer": "1",
+    "explanation": "Try again"
+  },
+  {
+    "question": "_______, his favorite show as a child was 'Where in the World is Carmen San Diego?'",
+    "answers": {
+      "1": "Although",
+      "2": "However",
+      "3": "In fact"
+    },
+    "correctAnswer": "3",
+    "explanation": "Try again"
+  }
+  ,
+  {
+    "question": "_______, Juan visited Mexico and during that trip he learned some Spanish.",
+    "answers": {
+      "1": "Previously",
+      "2": "However",
+      "3": "In fact"
+    },
+    "correctAnswer": "1",
+    "explanation": "Try again"
+  }
+
+  ,
+  {
+    "question": "______ to his last traveling adventure, this vacation is much more demanding",
+    "answers": {
+      "1": "Subsequent",
+      "2": "In contrast",
+      "3": "Adjacent to"
+    },
+    "correctAnswer": "2",
+    "explanation": "Try again"
+  }
+  ,
+  {
+    "question": "______, Pedro thought he would travel only through India, but he later decided to visit the Great Wall in China as well'",
+    "answers": {
+      "1": "As an example",
+      "2": "Initially",
+      "3": "In fact"
+    },
+    "correctAnswer": "2",
+    "explanation": "Try again"
+  }
+  ,
+  {
+    "question": "_______, once he accrues more vacation time, he plans to travel through South America",
+    "answers": {
+      "1": "Eventually",
+      "2": "Consequently",
+      "3": "Simultaneously"
+    },
+    "correctAnswer": "1",
+    "explanation": "Try again"
+  }
+]

@@ -26,6 +26,7 @@ const initReading = document.querySelector("#initReading")
 const initWriting = document.querySelector("#initWriting")
 const bSubmit = document.querySelector("#submitQuiz")
 const loadHistory = document.querySelector("#loadHistory")
+const loadResults = document.querySelector("#loadResults")
 
 //Initial Reading Section and Jquery on
 $('#initReading').on('click', function () {
@@ -66,9 +67,8 @@ function principalMethod(dataJson, sectionReady){
         showReplies(sectionReady) //show the answers
         times("finish") //finish time counter 
         heightStyle("#submitQuiz", 'toggle') //Basic button style
-        //Maybe show the time in a div
+        loadResults.innerHTML += `<br/>Time for ${sectionReady.type} Test: ${Math.round((sessionStorage.getItem("finish")-sessionStorage.getItem("init"))/1000)} seconds`
         console.log(`Time for ${sectionReady.type} Test: ${Math.round((sessionStorage.getItem("finish")-sessionStorage.getItem("init"))/1000)} seconds`)
-        //initAll.innerHTML = `Volver a intentarlo`
       }
   })
 }
@@ -123,9 +123,11 @@ function showReplies(section){
   section.pointsQuiz(points)
   let prom = Math.round((section.points/section.quiz.length)*100) //Average 
   if (prom >= section.approved){
+    loadResults.innerHTML += `<br/>Congratulations! You get ${prom}% of the correct answers`
     console.log(`Congratulations! You get ${prom}% of the correct answers`)
   }
   else{
+    loadResults.innerHTML += `<br/>Sorry! You only get ${prom}% of the correct answers`
     console.log(`Sorry! You only get ${prom}% of the correct answers`)
   }
 }

@@ -1,6 +1,5 @@
 class Section{
-  constructor(description, type){
-    this.description = description;
+  constructor(type){
     this.type = type;
     this.quiz = [];
     this.points = 0;
@@ -22,36 +21,55 @@ class Section{
   }
 }
 
-const sectionQuiz = document.querySelector("#readingQuiz")
-const initAll = document.querySelector("#initialButton")
-const bSubmit = document.querySelector("#submitReading")
-const readingJson = "../data/reading.json"
-//const writingJson = "../data/writing.json"
+const sectionQuiz = document.querySelector("#loadQuiz")
+const initReading = document.querySelector("#initReading")
+const initWriting = document.querySelector("#initWriting")
+const bSubmit = document.querySelector("#submitQuiz")
+const loadHistory = document.querySelector("#loadHistory")
 
-//Initial Method and Jquery on
-$('#initialButton').on('click', function () {
+//Initial Reading Section and Jquery on
+$('#initReading').on('click', function () {
   rebootStorage()
   times("init")
-  //First section will be "Reading" and will have X questions
-  const sectionReading = new Section("Here you can find activities to practise your READING skills", "reading")
+  const dataJson = "../data/reading.json"
+  const sectionReady = new Section("reading")
+  loadHistory.innerHTML = 
+  `
+  My family lives in a small house. It’s simple but pretty. It has a large garden. I like to work in the garden but my sister hates to work in the garden. She prefers to read. She reads in the morning, in the afternoon and at night.
+  <br/>I give all of the vegetables to mom and dad. They like to cook in our small kitchen. I eat any vegetable but my sister eats only a few.
+  <br/>My family always eats breakfast and dinner together. We talk. We laugh. Then my sister washes the dishes.
+  <br/>At night dad likes to listen to music. Mom works on the computer. I watch television. And my sister reads.
+  <br/>Soon we go to bed. My parents go to bed late but my sister and I go to bed early. I’m ready to go to sleep but my sister wants to keep reading.`
+  principalMethod(dataJson, sectionReady)
+})
 
-  readData(readingJson)//We invocated a fetch method for a specific url with json format
+//Initial Writing Section and Jquery on
+$('#initWriting').on('click', function () {
+  rebootStorage()
+  times("init")
+  const dataJson = "../data/writing.json"
+  const sectionReady = new Section("writing")
+  principalMethod(dataJson, sectionReady)
+})
+
+function principalMethod(dataJson, sectionReady){
+  readData(dataJson)//We invocated a fetch method for a specific url with json format
     .then(res => res.json()) //promise to json format
     .then(data => { 
-      sectionReading.insertQuiz(data)//We create the Quiz with Section method
-      buildSection(sectionReading.quiz) //Build section and create html skeleton
+      sectionReady.insertQuiz(data)//We create the Quiz with Section method
+      buildSection(sectionReady.quiz) //Build section and create html skeleton
       bSubmit.setAttribute("class", "btn btn-primary btn-sm")
-      heightStyle("#submitReading", 'show')//Basic button style
+      heightStyle("#submitQuiz", 'show' )//Basic button style
       bSubmit.onclick = () =>{
-        showReplies(sectionReading) //show the answers
+        showReplies(sectionReady) //show the answers
         times("finish") //finish time counter 
-        heightStyle("#submitReading", 'toggle') //Basic button style
+        heightStyle("#submitQuiz", 'toggle') //Basic button style
         //Maybe show the time in a div
-        console.log(`Time for reading Test: ${Math.round((sessionStorage.getItem("finish")-sessionStorage.getItem("init"))/1000)} seconds`)
-        initAll.innerHTML = `Volver a intentarlo`
+        console.log(`Time for ${sectionReady.type} Test: ${Math.round((sessionStorage.getItem("finish")-sessionStorage.getItem("init"))/1000)} seconds`)
+        //initAll.innerHTML = `Volver a intentarlo`
       }
   })
-})
+}
 
 function buildSection(questions){
   // HTML output
